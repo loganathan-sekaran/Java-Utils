@@ -1,4 +1,4 @@
-package org.ls.javautil.mappable.optional;
+package org.ls.javautils.mappable.optional;
 
 import java.util.Objects;
 import java.util.Optional;
@@ -19,7 +19,7 @@ public class MappableOptionalDouble {
 		if (!optionalDouble.isPresent())
 			return Optional.empty();
 		else {
-			return Optional.ofNullable(mapper.apply(optionalDouble.getAsDouble()));
+			return Optional.<U>ofNullable(mapper.apply(optionalDouble.getAsDouble()));
 		}
 	}
 
