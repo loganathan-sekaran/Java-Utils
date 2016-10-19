@@ -1,16 +1,10 @@
-package org.ls.javautils.mappable;
+package org.ls.javautils.mappable.optional;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
 public class MappableOptionalIntTest  {
 
-	/**
-	 * Rigourous Test :-)
-	 */
 	@Test
 	public void testApp() {
 		Assert.assertTrue(true);
