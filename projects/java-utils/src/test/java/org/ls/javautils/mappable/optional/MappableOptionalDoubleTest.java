@@ -1,7 +1,5 @@
 package org.ls.javautils.mappable.optional;
 
-import static org.hamcrest.CoreMatchers.is;
-
 import java.util.OptionalDouble;
 import java.util.concurrent.ThreadLocalRandom;
 
