@@ -8,6 +8,9 @@ import java.util.function.LongUnaryOperator;
 
 /**
  * The  Mappable wrapper of OptionalLong.
+ * 
+ * @author Loganathan.S (loganathan001@gmail.com)
+ * 
  */
 public class MappableOptionalLong {
 

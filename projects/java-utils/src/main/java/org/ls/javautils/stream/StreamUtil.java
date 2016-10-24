@@ -11,6 +11,9 @@ import java.util.stream.Stream;
 
 /**
  * The StreamUtil.
+ *
+ * @author Loganathan.S (loganathan001@gmail.com)
+ *
  */
 public enum StreamUtil {
 	;

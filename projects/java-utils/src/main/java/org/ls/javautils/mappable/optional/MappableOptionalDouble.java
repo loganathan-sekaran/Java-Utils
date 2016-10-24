@@ -8,6 +8,9 @@ import java.util.function.DoubleUnaryOperator;
 
 /**
  * The Mappable wrapper of OptionalDouble.
+ * 
+ * @author Loganathan.S (loganathan001@gmail.com)
+ * 
  */
 public class MappableOptionalDouble {
 

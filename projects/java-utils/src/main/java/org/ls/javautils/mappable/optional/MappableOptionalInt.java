@@ -8,6 +8,9 @@ import java.util.function.IntUnaryOperator;
 
 /**
  * The  Mappable wrapper of OptionalInt.
+ * 
+ * @author Loganathan.S (loganathan001@gmail.com)
+ * 
  */
 public class MappableOptionalInt {
 

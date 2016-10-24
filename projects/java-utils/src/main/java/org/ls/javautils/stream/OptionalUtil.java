@@ -5,6 +5,9 @@ import java.util.function.Function;
 
 /**
  * The OptionalUtil.
+ * 
+ * @author Loganathan.S (loganathan001@gmail.com)
+ * 
  */
 public enum OptionalUtil {
 	;
