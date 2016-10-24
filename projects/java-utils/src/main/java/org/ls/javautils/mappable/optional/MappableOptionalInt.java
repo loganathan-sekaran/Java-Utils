@@ -31,6 +31,15 @@ public class MappableOptionalInt {
 			return MappableOptionalInt.of(mapper.applyAsInt(optionalInt.getAsInt()));
 		}
 	}
+	
+	public OptionalInt mapAsOptionalInt(IntUnaryOperator mapper) {
+		Objects.requireNonNull(mapper);
+		if (!optionalInt.isPresent())
+			return OptionalInt.empty();
+		else {
+			return OptionalInt.of(mapper.applyAsInt(optionalInt.getAsInt()));
+		}
+	}
 
 	public <U> Optional<U> flatMap(IntFunction<Optional<U>> mapper) {
 		Objects.requireNonNull(mapper);
@@ -45,6 +54,15 @@ public class MappableOptionalInt {
 		Objects.requireNonNull(mapper);
 		if (!optionalInt.isPresent())
 			return MappableOptionalInt.empty();
+		else {
+			return mapper.apply(optionalInt.getAsInt());
+		}
+	}
+	
+	public OptionalInt flatMapAsOptionalInt(IntFunction<OptionalInt> mapper) {
+		Objects.requireNonNull(mapper);
+		if (!optionalInt.isPresent())
+			return OptionalInt.empty();
 		else {
 			return mapper.apply(optionalInt.getAsInt());
 		}

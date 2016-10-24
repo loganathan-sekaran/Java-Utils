@@ -31,6 +31,15 @@ public class MappableOptionalLong {
 			return MappableOptionalLong.of(mapper.applyAsLong(optionalLong.getAsLong()));
 		}
 	}
+	
+	public OptionalLong mapAsOptionalLong(LongUnaryOperator mapper) {
+		Objects.requireNonNull(mapper);
+		if (!optionalLong.isPresent())
+			return OptionalLong.empty();
+		else {
+			return OptionalLong.of(mapper.applyAsLong(optionalLong.getAsLong()));
+		}
+	}
 
 	public <U> Optional<U> flatMap(LongFunction<Optional<U>> mapper) {
 		Objects.requireNonNull(mapper);
@@ -45,6 +54,15 @@ public class MappableOptionalLong {
 		Objects.requireNonNull(mapper);
 		if (!optionalLong.isPresent())
 			return MappableOptionalLong.empty();
+		else {
+			return mapper.apply(optionalLong.getAsLong());
+		}
+	}
+	
+	public OptionalLong flatMapAsOptionalLong(LongFunction<OptionalLong> mapper) {
+		Objects.requireNonNull(mapper);
+		if (!optionalLong.isPresent())
+			return OptionalLong.empty();
 		else {
 			return mapper.apply(optionalLong.getAsLong());
 		}

@@ -31,6 +31,15 @@ public class MappableOptionalDouble {
 			return MappableOptionalDouble.of(mapper.applyAsDouble(optionalDouble.getAsDouble()));
 		}
 	}
+	
+	public OptionalDouble mapAsOptionalDouble(DoubleUnaryOperator mapper) {
+		Objects.requireNonNull(mapper);
+		if (!optionalDouble.isPresent())
+			return OptionalDouble.empty();
+		else {
+			return OptionalDouble.of(mapper.applyAsDouble(optionalDouble.getAsDouble()));
+		}
+	}
 
 	public <U> Optional<U> flatMap(DoubleFunction<Optional<U>> mapper) {
 		Objects.requireNonNull(mapper);
@@ -45,6 +54,15 @@ public class MappableOptionalDouble {
 		Objects.requireNonNull(mapper);
 		if (!optionalDouble.isPresent())
 			return MappableOptionalDouble.empty();
+		else {
+			return mapper.apply(optionalDouble.getAsDouble());
+		}
+	}
+	
+	public OptionalDouble flatMapAsOptionalDouble(DoubleFunction<OptionalDouble> mapper) {
+		Objects.requireNonNull(mapper);
+		if (!optionalDouble.isPresent())
+			return OptionalDouble.empty();
 		else {
 			return mapper.apply(optionalDouble.getAsDouble());
 		}
