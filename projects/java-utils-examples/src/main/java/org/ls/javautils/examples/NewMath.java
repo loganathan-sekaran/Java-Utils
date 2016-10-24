@@ -10,29 +10,29 @@ import org.ls.javautils.optional.mappable.MappableOptionalDouble;
  *
  */
 public class NewMath {
-	
+
 	public static Optional<Double> sqrt(double d) {
 		return d > 0 ? Optional.of(Math.sqrt(d)) : Optional.empty();
 	}
-	
+
 	public static Optional<Double> inv(double d) {
-		return d != 0 ? Optional.of(1/d) : Optional.empty();
+		return d != 0 ? Optional.of(1 / d) : Optional.empty();
 	}
-	
+
 	public static OptionalDouble sqrtAsOptionalDouble(double d) {
 		return d > 0 ? OptionalDouble.of(Math.sqrt(d)) : OptionalDouble.empty();
 	}
-	
+
 	public static OptionalDouble invAsOptionalDouble(double d) {
-		return d != 0 ? OptionalDouble.of(1/d) : OptionalDouble.empty();
+		return d != 0 ? OptionalDouble.of(1 / d) : OptionalDouble.empty();
 	}
-	
+
 	public static MappableOptionalDouble sqrtAsMappableOptionalDouble(double d) {
 		return d > 0 ? MappableOptionalDouble.of(Math.sqrt(d)) : MappableOptionalDouble.empty();
 	}
-	
+
 	public static MappableOptionalDouble invAsMappableOptionalDouble(double d) {
-		return d != 0 ? MappableOptionalDouble.of(1/d) : MappableOptionalDouble.empty();
+		return d != 0 ? MappableOptionalDouble.of(1 / d) : MappableOptionalDouble.empty();
 	}
 
 }
