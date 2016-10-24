@@ -1,4 +1,4 @@
-package org.ls.javautils.mappable.optional;
+package org.ls.javautils.optional.mappable;
 
 import java.util.Objects;
 import java.util.Optional;

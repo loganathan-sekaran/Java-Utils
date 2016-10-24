@@ -1,4 +1,4 @@
-package org.ls.javautils.mappable.optional;
+package org.ls.javautils.optional.mappable;
 
 import java.util.Optional;
 import java.util.OptionalLong;
@@ -8,6 +8,7 @@ import java.util.function.LongUnaryOperator;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.ls.javautils.optional.mappable.MappableOptionalLong;
 
 public class MappableOptionalLongTest  {
 	@Test

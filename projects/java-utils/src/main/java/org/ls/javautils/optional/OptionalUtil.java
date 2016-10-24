@@ -1,4 +1,4 @@
-package org.ls.javautils.stream;
+package org.ls.javautils.optional;
 
 import java.util.Optional;
 import java.util.OptionalDouble;

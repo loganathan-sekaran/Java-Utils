@@ -1,4 +1,4 @@
-package org.ls.javautils.mappable.optional;
+package org.ls.javautils.optional.mappable;
 
 import java.util.Optional;
 import java.util.OptionalDouble;
@@ -8,6 +8,7 @@ import java.util.function.DoubleUnaryOperator;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.ls.javautils.optional.mappable.MappableOptionalDouble;
 
 public class MappableOptionalDoubleTest  {
 
