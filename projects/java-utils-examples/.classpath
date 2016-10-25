@@ -32,14 +32,5 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Sekaran/.m2/repository/org/ls/java-utils/1.0.0-SNAPSHOT/java-utils-1.0.0-SNAPSHOT.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.ls"/>
-			<attribute name="maven.artifactId" value="java-utils"/>
-			<attribute name="maven.version" value="1.0.0-SNAPSHOT"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
