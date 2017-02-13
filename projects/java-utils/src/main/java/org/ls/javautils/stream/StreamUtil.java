@@ -22,7 +22,7 @@ public enum StreamUtil {
 	;
 
 	/**
-	 * Flatten.
+	 * Flatten Stream of Optionals as Stream.
 	 *
 	 * @param <T> the generic type
 	 * @param optionalStream the optional stream
@@ -33,7 +33,7 @@ public enum StreamUtil {
 	}
 
 	/**
-	 * Flatten as double stream.
+	 * Flatten Stream of OptionalDouble as DoubleStream.
 	 *
 	 * @param optionalDoubleStream the optional double stream
 	 * @return the double stream
@@ -44,7 +44,7 @@ public enum StreamUtil {
 	}
 
 	/**
-	 * Flatten as int stream.
+	 * Flatten Stream of OptionalInt as IntStream
 	 *
 	 * @param optionalIntStream the optional int stream
 	 * @return the int stream
@@ -54,7 +54,7 @@ public enum StreamUtil {
 	}
 
 	/**
-	 * Flatten as long stream.
+	 * Flatten Stream of OptionalLong as LongStream
 	 *
 	 * @param optionalLongStream the optional long stream
 	 * @return the long stream
