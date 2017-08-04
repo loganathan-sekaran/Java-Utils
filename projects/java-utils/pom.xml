@@ -4,7 +4,7 @@
 
 	<groupId>org.ls</groupId>
 	<artifactId>java-utils</artifactId>
-	<version>1.0.4-SNAPSHOT</version>
+	<version>1.0.5</version>
 	<packaging>jar</packaging>
 
 	<name>javautils</name>
