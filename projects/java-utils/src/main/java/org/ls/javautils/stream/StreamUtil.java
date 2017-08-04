@@ -31,6 +31,18 @@ public enum StreamUtil {
 	public static <T> Stream<T> flatten(Stream<Optional<T>> optionalStream) {
 		return optionalStream.filter(op -> op.isPresent()).flatMap(opt -> Stream.of(opt.get()));
 	}
+	
+	/**
+	 * Flatten the array of Optionals as Stream.
+	 *
+	 * @param <T> the generic type
+	 * @param optionals the array of optionals
+	 * @return the stream
+	 */
+	@SafeVarargs
+	public static <T> Stream<T> flatten(Optional<T>... optionals) {
+		return Stream.of(optionals).filter(op -> op.isPresent()).flatMap(opt -> Stream.of(opt.get()));
+	}
 
 	/**
 	 * Flatten Stream of OptionalDouble as DoubleStream.
