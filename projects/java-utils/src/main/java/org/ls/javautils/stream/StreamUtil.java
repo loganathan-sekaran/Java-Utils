@@ -56,7 +56,7 @@ public enum StreamUtil {
 	}
 
 	/**
-	 * Flatten Stream of OptionalInt as IntStream
+	 * Flatten Stream of OptionalInt as IntStream.
 	 *
 	 * @param optionalIntStream the optional int stream
 	 * @return the int stream
@@ -66,7 +66,7 @@ public enum StreamUtil {
 	}
 
 	/**
-	 * Flatten Stream of OptionalLong as LongStream
+	 * Flatten Stream of OptionalLong as LongStream.
 	 *
 	 * @param optionalLongStream the optional long stream
 	 * @return the long stream
