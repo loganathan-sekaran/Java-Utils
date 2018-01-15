@@ -134,5 +134,14 @@ public class StreamUtilTest {
 		// Check the parallel flag applied
 		Assert.assertTrue(StreamUtil.streamOf(originalList.iterator(), true).isParallel());
 	}
+	
+	@SuppressWarnings("unchecked")
+	@Test
+	public void testFlattenOptionalStream() throws Exception {
+		String[] array = new String[] { "aaa", "bbb", "ccc", "ddd" };
+		Optional<String>[] input = Arrays.stream(array).map(element -> Optional.ofNullable(element)).toArray(size -> new Optional[size]);
+		Stream<String> flattenedValues = StreamUtil.flatten(input);
+		Assert.assertArrayEquals(array, flattenedValues.toArray(size -> new String[size]));
+	}
 
 }
