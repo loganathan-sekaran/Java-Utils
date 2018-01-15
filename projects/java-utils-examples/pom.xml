@@ -3,10 +3,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.vishag</groupId>
 	<artifactId>java-utils-examples</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>java-utils-examples</name>
 	<description>This contains the example usages of Java-Utils library which is a set of Java utilities with useful helper methods and classes for Optional, Function, Stream and Tuples</description>
-  <url>https://github.com/loganathan001/AsyncHelper</url>
+  <url>https://github.com/loganathan001/Java-Utils</url>
 	<distributionManagement>
 	  <snapshotRepository>
 	    <id>ossrh</id>
@@ -188,9 +188,9 @@
 	  </license>
 	</licenses>
 <scm>
-  <connection>scm:git:git://github.com/loganathan001/AsyncHelper.git</connection>
-  <developerConnection>scm:git:ssh://github.com:loganathan001/AsyncHelper.git</developerConnection>
-  <url>https://github.com/loganathan001/AsyncHelper</url>
+  <connection>scm:git:git://github.com/loganathan001/Java-Utils.git</connection>
+  <developerConnection>scm:git:ssh://github.com/loganathan001/Java-Utils.git</developerConnection>
+  <url>https://github.com/loganathan001/Java-Utils</url>
 </scm>
 <developers>
 	<developer>
