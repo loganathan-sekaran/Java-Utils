@@ -79,7 +79,7 @@ public class TupleTest {
 		Assert.assertEquals(c, result.get3());
 		Assert.assertEquals(d, result.get4());
 		Assert.assertEquals(e, result.get5());
-		Assert.assertEquals(result, Tuple.of(a, b, c, e));
+		Assert.assertEquals(result, Tuple.of(a, b, c, d, e));
 	}
 
 	@Test
@@ -101,7 +101,7 @@ public class TupleTest {
 		Assert.assertEquals(d, result.get4());
 		Assert.assertEquals(e, result.get5());
 		Assert.assertEquals(f, result.get6());
-		Assert.assertEquals(result, Tuple.of(a, b, c, e, f));
+		Assert.assertEquals(result, Tuple.of(a, b, c, d, e, f));
 	}
 
 	@Test
@@ -125,7 +125,7 @@ public class TupleTest {
 		Assert.assertEquals(e, result.get5());
 		Assert.assertEquals(f, result.get6());
 		Assert.assertEquals(g, result.get7());
-		Assert.assertEquals(result, Tuple.of(a, b, c, e, f, g));
+		Assert.assertEquals(result, Tuple.of(a, b, c, d, e, f, g));
 	}
 
 	@Test
@@ -151,7 +151,7 @@ public class TupleTest {
 		Assert.assertEquals(f, result.get6());
 		Assert.assertEquals(g, result.get7());
 		Assert.assertEquals(h, result.get8());
-		Assert.assertEquals(result, Tuple.of(a, b, c, e, f, g, h));
+		Assert.assertEquals(result, Tuple.of(a, b, c, d, e, f, g, h));
 	}
 
 	@Test
@@ -179,7 +179,7 @@ public class TupleTest {
 		Assert.assertEquals(g, result.get7());
 		Assert.assertEquals(h, result.get8());
 		Assert.assertEquals(i, result.get9());
-		Assert.assertEquals(result, Tuple.of(a, b, c, e, f, g, h, i));
+		Assert.assertEquals(result, Tuple.of(a, b, c, d, e, f, g, h, i));
 	}
 
 	@Test
@@ -209,7 +209,7 @@ public class TupleTest {
 		Assert.assertEquals(h, result.get8());
 		Assert.assertEquals(i, result.get9());
 		Assert.assertEquals(j, result.get10());
-		Assert.assertEquals(result, Tuple.of(a, b, c, e, f, g, h, i, j));
+		Assert.assertEquals(result, Tuple.of(a, b, c, d, e, f, g, h, i, j));
 	}
 
 	private Object getTestObject() {
