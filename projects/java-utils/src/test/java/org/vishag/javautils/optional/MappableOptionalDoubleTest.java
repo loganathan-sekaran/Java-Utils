@@ -1,4 +1,4 @@
-package org.ls.javautils.optional;
+package org.vishag.javautils.optional;
 
 import java.util.Optional;
 import java.util.OptionalDouble;

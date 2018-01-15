@@ -1,4 +1,4 @@
-package org.ls.javautils.stream;
+package org.vishag.javautils.stream;
 
 import java.util.ArrayList;
 import java.util.Arrays;
