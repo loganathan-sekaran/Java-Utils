@@ -4,7 +4,7 @@
 	<groupId>org.vishag</groupId>
 	<artifactId>java-utils-examples</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>javautils-examples</name>
+	<name>java-utils-examples</name>
 	<description>This contains the example usages of Java-Utils library which is a set of Java utilities with useful helper methods and classes for Optional, Function, Stream and Tuples</description>
   <url>https://github.com/loganathan001/AsyncHelper</url>
 	<distributionManagement>
