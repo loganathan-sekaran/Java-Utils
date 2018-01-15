@@ -8,6 +8,8 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/loganathan001/Java-Utils/issues)
 
+This library is a set of Java Utility containing many useful Helper Classes which are described below.
+
 ##Stream Util
 This library contains the StreamUtil, that contains flatten methods to flatten any stream of optionals to the stream of the type contained in the optionals. These flatten methods also supports boxed and non-boxed types of streams.
 
