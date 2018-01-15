@@ -22,7 +22,10 @@ public class TupleTest {
 		Assert.assertEquals(a, result.get1());
 		Assert.assertEquals(b, result.get2());
 		
-		Assert.assertEquals(result, Tuple.of(a, b));
+		Tuple2<String, Integer> result2 = Tuple.of(a, b);
+		Assert.assertEquals(result, result2);
+		Assert.assertEquals(result.hashCode(), result2.hashCode());
+		Assert.assertEquals(result.toString(), result2.toString());
 		
 	}
 
@@ -40,7 +43,10 @@ public class TupleTest {
 		Assert.assertEquals(b, result.get2());
 		Assert.assertEquals(c, result.get3());
 		
-		Assert.assertEquals(result, Tuple.of(a, b, c));
+		Tuple3<String, Integer, Object> result2 = Tuple.of(a, b, c);
+		Assert.assertEquals(result, result2);
+		Assert.assertEquals(result.hashCode(), result2.hashCode());
+		Assert.assertEquals(result.toString(), result2.toString());
 	}
 
 	@Test
@@ -59,7 +65,10 @@ public class TupleTest {
 		Assert.assertEquals(c, result.get3());
 		Assert.assertEquals(d, result.get4());
 		
-		Assert.assertEquals(result, Tuple.of(a, b, c, d));
+		Tuple4<String, Integer, Object, String> result2 = Tuple.of(a, b, c, d);
+		Assert.assertEquals(result, result2);
+		Assert.assertEquals(result.hashCode(), result2.hashCode());
+		Assert.assertEquals(result.toString(), result2.toString());
 	}
 
 	@Test
@@ -79,7 +88,10 @@ public class TupleTest {
 		Assert.assertEquals(c, result.get3());
 		Assert.assertEquals(d, result.get4());
 		Assert.assertEquals(e, result.get5());
-		Assert.assertEquals(result, Tuple.of(a, b, c, d, e));
+		Tuple5<String, Integer, Object, String, String> result2 = Tuple.of(a, b, c, d, e);
+		Assert.assertEquals(result, result2);
+		Assert.assertEquals(result.hashCode(), result2.hashCode());
+		Assert.assertEquals(result.toString(), result2.toString());
 	}
 
 	@Test
@@ -101,7 +113,10 @@ public class TupleTest {
 		Assert.assertEquals(d, result.get4());
 		Assert.assertEquals(e, result.get5());
 		Assert.assertEquals(f, result.get6());
-		Assert.assertEquals(result, Tuple.of(a, b, c, d, e, f));
+		Tuple6<String, Integer, Object, String, String, String> result2 = Tuple.of(a, b, c, d, e, f);
+		Assert.assertEquals(result, result2);
+		Assert.assertEquals(result.hashCode(), result2.hashCode());
+		Assert.assertEquals(result.toString(), result2.toString());
 	}
 
 	@Test
@@ -125,7 +140,10 @@ public class TupleTest {
 		Assert.assertEquals(e, result.get5());
 		Assert.assertEquals(f, result.get6());
 		Assert.assertEquals(g, result.get7());
-		Assert.assertEquals(result, Tuple.of(a, b, c, d, e, f, g));
+		Tuple7<String, Integer, Object, String, String, String, String> result2 = Tuple.of(a, b, c, d, e, f, g);
+		Assert.assertEquals(result, result2);
+		Assert.assertEquals(result.hashCode(), result2.hashCode());
+		Assert.assertEquals(result.toString(), result2.toString());
 	}
 
 	@Test
@@ -151,7 +169,10 @@ public class TupleTest {
 		Assert.assertEquals(f, result.get6());
 		Assert.assertEquals(g, result.get7());
 		Assert.assertEquals(h, result.get8());
-		Assert.assertEquals(result, Tuple.of(a, b, c, d, e, f, g, h));
+		Tuple8<String, Integer, Object, String, String, String, String, String> result2 = Tuple.of(a, b, c, d, e, f, g, h);
+		Assert.assertEquals(result, result2);
+		Assert.assertEquals(result.hashCode(), result2.hashCode());
+		Assert.assertEquals(result.toString(), result2.toString());
 	}
 
 	@Test
@@ -179,7 +200,10 @@ public class TupleTest {
 		Assert.assertEquals(g, result.get7());
 		Assert.assertEquals(h, result.get8());
 		Assert.assertEquals(i, result.get9());
-		Assert.assertEquals(result, Tuple.of(a, b, c, d, e, f, g, h, i));
+		Tuple9<String, Integer, Object, String, String, String, String, String, String> result2 = Tuple.of(a, b, c, d, e, f, g, h, i);
+		Assert.assertEquals(result, result2);
+		Assert.assertEquals(result.hashCode(), result2.hashCode());
+		Assert.assertEquals(result.toString(), result2.toString());
 	}
 
 	@Test
@@ -209,7 +233,10 @@ public class TupleTest {
 		Assert.assertEquals(h, result.get8());
 		Assert.assertEquals(i, result.get9());
 		Assert.assertEquals(j, result.get10());
-		Assert.assertEquals(result, Tuple.of(a, b, c, d, e, f, g, h, i, j));
+		Tuple10<String, Integer, Object, String, String, String, String, String, String, String> result2 = Tuple.of(a, b, c, d, e, f, g, h, i, j);
+		Assert.assertEquals(result, result2);
+		Assert.assertEquals(result.hashCode(), result2.hashCode());
+		Assert.assertEquals(result.toString(), result2.toString());
 	}
 
 	private Object getTestObject() {
