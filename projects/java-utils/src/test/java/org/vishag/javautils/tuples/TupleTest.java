@@ -21,6 +21,9 @@ public class TupleTest {
 
 		Assert.assertEquals(a, result.get1());
 		Assert.assertEquals(b, result.get2());
+		
+		Assert.assertEquals(result, Tuple.of(a, b));
+		
 	}
 
 	@Test
@@ -36,6 +39,8 @@ public class TupleTest {
 		Assert.assertEquals(a, result.get1());
 		Assert.assertEquals(b, result.get2());
 		Assert.assertEquals(c, result.get3());
+		
+		Assert.assertEquals(result, Tuple.of(a, b, c));
 	}
 
 	@Test
@@ -53,6 +58,8 @@ public class TupleTest {
 		Assert.assertEquals(b, result.get2());
 		Assert.assertEquals(c, result.get3());
 		Assert.assertEquals(d, result.get4());
+		
+		Assert.assertEquals(result, Tuple.of(a, b, c, d));
 	}
 
 	@Test
@@ -72,6 +79,7 @@ public class TupleTest {
 		Assert.assertEquals(c, result.get3());
 		Assert.assertEquals(d, result.get4());
 		Assert.assertEquals(e, result.get5());
+		Assert.assertEquals(result, Tuple.of(a, b, c, e));
 	}
 
 	@Test
@@ -93,6 +101,7 @@ public class TupleTest {
 		Assert.assertEquals(d, result.get4());
 		Assert.assertEquals(e, result.get5());
 		Assert.assertEquals(f, result.get6());
+		Assert.assertEquals(result, Tuple.of(a, b, c, e, f));
 	}
 
 	@Test
@@ -116,6 +125,7 @@ public class TupleTest {
 		Assert.assertEquals(e, result.get5());
 		Assert.assertEquals(f, result.get6());
 		Assert.assertEquals(g, result.get7());
+		Assert.assertEquals(result, Tuple.of(a, b, c, e, f, g));
 	}
 
 	@Test
@@ -141,6 +151,7 @@ public class TupleTest {
 		Assert.assertEquals(f, result.get6());
 		Assert.assertEquals(g, result.get7());
 		Assert.assertEquals(h, result.get8());
+		Assert.assertEquals(result, Tuple.of(a, b, c, e, f, g, h));
 	}
 
 	@Test
@@ -168,6 +179,7 @@ public class TupleTest {
 		Assert.assertEquals(g, result.get7());
 		Assert.assertEquals(h, result.get8());
 		Assert.assertEquals(i, result.get9());
+		Assert.assertEquals(result, Tuple.of(a, b, c, e, f, g, h, i));
 	}
 
 	@Test
@@ -197,6 +209,7 @@ public class TupleTest {
 		Assert.assertEquals(h, result.get8());
 		Assert.assertEquals(i, result.get9());
 		Assert.assertEquals(j, result.get10());
+		Assert.assertEquals(result, Tuple.of(a, b, c, e, f, g, h, i, j));
 	}
 
 	private Object getTestObject() {
