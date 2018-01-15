@@ -16,11 +16,15 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.vishag.javautils.function;
+package org.vishag.javautils.optional;
 
 import java.util.Objects;
 import java.util.Optional;
 import java.util.function.Predicate;
+
+import org.vishag.javautils.function.ConsumerWithThrowable;
+import org.vishag.javautils.function.FunctionWithThrowable;
+import org.vishag.javautils.function.PredicateWithThrowable;
 
 /**
  * The Class OptionalWithThrowable.
@@ -127,9 +131,13 @@ public class OptionalWithThrowable<T, E extends Throwable> {
 	 * @return the optional with throwable
 	 * @throws E the e
 	 */
-	public OptionalWithThrowable<T,E> filter(Predicate<? super T> predicate) throws E {
+	public OptionalWithThrowable<T,E> filter(PredicateWithThrowable<T, E> predicate) throws E {
 		Objects.requireNonNull(predicate);
-		return of(optional.filter(predicate));
+		if (!isPresent())
+			return empty();
+		else {
+			return predicate.test(get()) ? this : empty();
+		}
 	}
 	
 	/**
