@@ -7,7 +7,7 @@ import java.util.OptionalLong;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.ls.javautils.optional.OptionalUtil;
+import org.vishag.javautils.optional.OptionalUtil;
 
 public class OptionalUtilTest {
 

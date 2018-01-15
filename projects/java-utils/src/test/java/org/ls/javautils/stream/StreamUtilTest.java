@@ -15,6 +15,7 @@ import java.util.stream.Stream;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.vishag.javautils.stream.StreamUtil;
 
 public class StreamUtilTest {
 
