@@ -24,7 +24,7 @@ A new OptionalWithThrowable is added so that any map/flatMap/filter/ifPresent op
 
 #Funtional Interfaces with Throwable
 <br>
-With regular Functional Interfaces, exceptions or errors are be not able chain the exceptions thrown inside the method to the caller. This required to handle the exception within the method definition itself. To handle this requirement new kind of Funtional Interfaces namely PredicateWithThrowable, FuntionWithThrowable, ConsumerWithThrowable and BiFunctionWithThrowable are added. Some of these are also used with OptionalWithThrowable implementation.
+With regular Functional Interfaces, exceptions or errors are not able chain the exceptions thrown inside the method to the caller. This required to handle the exception within the method definition itself. To handle this requirement new kind of Funtional Interfaces namely PredicateWithThrowable, FuntionWithThrowable, ConsumerWithThrowable and BiFunctionWithThrowable are added. Some of these are also used with OptionalWithThrowable implementation.
 
 #Tuples
 <br>
