@@ -4,7 +4,7 @@
 
 	<groupId>org.vishag</groupId>
 	<artifactId>java-utils</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.2</version>
 	<description>This library is a set of Java utilities with useful helper methods and classes for Optional, Function, Stream and Tuples</description>
   <url>https://github.com/loganathan001/Java-Utils</url>
 	<distributionManagement>
