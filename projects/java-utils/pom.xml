@@ -107,10 +107,9 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
-      <scope>test</scope>
+      	<groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	    <version>4.13.2</version>
     </dependency>
   </dependencies>
   
@@ -191,7 +190,7 @@
 	<developer>
 	  <name>Loganathan Sekaran</name>
 	  <email>loganathan001@gmail.com</email>
-	  <organization>ILink-Systems</organization>
+	  <organization>Ooru Digital</organization>
 	  <organizationUrl>http://dev.vishag.org</organizationUrl>
 	</developer>
  </developers>

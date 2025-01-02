@@ -1,11 +1,8 @@
 package org.vishag.javautils.tuples;
 
-import javax.annotation.Generated;
-
 import org.junit.Assert;
 import org.junit.Test;
 
-@Generated(value = "org.junit-tools-1.0.6")
 public class TupleTest {
 
 	private static final Object OBJECT = new Object();

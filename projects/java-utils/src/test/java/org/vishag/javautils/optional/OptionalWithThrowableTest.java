@@ -6,8 +6,6 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.Optional;
 
-import javax.annotation.Generated;
-
 import org.junit.Assert;
 import org.junit.Test;
 import org.vishag.javautils.function.ConsumerWithThrowable;
@@ -15,7 +13,6 @@ import org.vishag.javautils.function.FunctionWithThrowable;
 import org.vishag.javautils.function.PredicateWithThrowable;
 
 
-@Generated(value = "org.junit-tools-1.0.6")
 public class OptionalWithThrowableTest {
 
 	private static final OptionalWithThrowable<String, Exception> INPUT = new OptionalWithThrowable<>(Optional.of("abcdef123456"));
